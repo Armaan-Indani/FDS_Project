@@ -102,7 +102,7 @@ with tab3:
     df['pca1'] = X_pca[:, 0]
     df['pca2'] = X_pca[:, 1]
     fig, ax = plt.subplots()
-    sns.scatterplot(x='pca1', y='pca2', hue='cluster', data=df, hue='course', palette="Set2", legend=False, ax=ax)
+    sns.scatterplot(x='pca1', y='pca2', hue='cluster', data=df, palette="Set2", legend=False, ax=ax)
     ax.set_title("PCA of Student Clusters")
     st.pyplot(fig)
 
