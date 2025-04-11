@@ -12,7 +12,7 @@ st.title("Student Clustering and Recommendation System")
 
 @st.cache_data
 def load_data():
-    return pd.read_csv("app/data/student-mat.csv", sep=';')
+    return pd.read_csv("app/data/3_student-mat.csv", sep=';')
 
 df = load_data()
 st.subheader("Raw Dataset Preview")
